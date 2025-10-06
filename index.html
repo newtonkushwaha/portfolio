@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Newton — Portfolio</title>
+  <meta name="description" content="Photography • Design • Projects • Achievements" />
+  <link rel="preload" as="image" href="assets/img/photos/photo-sample.jpg">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta name="theme-color" content="#0f172a" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home"><span class="logo">N</span> Newton</a>
+      <nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+        <ul id="navList">
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="themeToggle" class="chip" aria-label="Toggle theme">🌓</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Portfolio</p>
+          <h1>Hi, I’m Newton.</h1>
+          <p class="lead">
+            I shoot photos, design simple visuals, and build small web things.  
+            This is my clean corner of the internet.
+          </p>
+          <div class="cta">
+            <a class="btn" href="#photos">See Photos</a>
+            <a class="btn secondary" href="#work">See Work</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <!-- Replace with your image -->
+          <img src="assets/img/photos/photo-sample.jpg" alt="Sample hero shot" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOS (Gallery with lightbox) -->
+    <section id="photos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Photos</h2>
+          <p class="sub">A quiet gallery of moments.</p>
+        </div>
+
+        <!-- Optional Filters -->
+        <div class="filters" role="tablist" aria-label="Photo filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="street">Street</button>
+          <button class="filter-btn" data-filter="portraits">Portraits</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+
+        <div class="grid gallery" id="photoGrid">
+          <!-- Duplicate & replace src/alt/category -->
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-1.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-1.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-2.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-2.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-3.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-3.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+          
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-4.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-4.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-5.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-5.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-6.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-6.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-7.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-7.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-8.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-8.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-9.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-9.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+
+          <figure class="card" data-category="street">
+            <img src="assets/img/photos/street/street-10.jpg" alt="Evening street, Delhi" data-full="assets/img/photos/street/street-10.jpg">
+            <figcaption>Evening street, Delhi</figcaption>
+          </figure>
+
+          <figure class="card" data-category="portraits">
+            <img src="assets/img/photos/photo-portrait.jpg" alt="Portrait window light" data-full="assets/img/photos/photo-portrait.jpg">
+            <figcaption>Portrait — window light</figcaption>
+          </figure>
+
+          <figure class="card" data-category="events">
+            <img src="assets/img/photos/photo-event.jpg" alt="College event highlights" data-full="assets/img/photos/photo-event.jpg">
+            <figcaption>College event</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK (Projects & Design) -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Work</h2>
+          <p class="sub">Graphic design and small web projects.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <img class="thumb" src="assets/img/projects/proj-media-cell-revamp-cover.jpg" alt="Media Cell revamp cover">
+            <h3>Media Cell — Info Portal Revamp</h3>
+            <p class="muted">Redesigned the info flow and visuals for clarity and speed.</p>
+            <div class="tags">
+              <span class="tag">Figma</span><span class="tag">HTML/CSS</span>
+            </div>
+            <!-- optional links -->
+            <!-- <p><a class="btn small" href="#" target="_blank">Live</a> <a class="btn small secondary" href="#" target="_blank">Code</a></p> -->
+          </article>
+
+          <article class="card">
+            <img class="thumb" src="assets/img/projects/proj-chess-app-ss1.jpg" alt="Chess openings mini app">
+            <h3>Chess Openings Mini-App</h3>
+            <p class="muted">Quick lines, traps, and plans in a tiny UI.</p>
+            <div class="tags">
+              <span class="tag">JS</span><span class="tag">Data</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="thumb" src="assets/img/projects/proj-poster-pack.jpg" alt="Poster design pack">
+            <h3>Society Poster Pack</h3>
+            <p class="muted">Clean templates for events, elections, and drives.</p>
+            <div class="tags">
+              <span class="tag">Branding</span><span class="tag">Canva</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Achievements</h2>
+          <p class="sub">Small wins that keep the story moving.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <img class="thumb" src="assets/img/achievements/ach-nss-certificate-2025.jpg" alt="NSS certificate">
+            <h3>NSS Volunteer Certificate</h3>
+            <p class="muted">Awarded for community service contributions.</p>
+            <a class="btn small secondary" href="assets/img/achievements/ach-nss-certificate-2025.jpg" target="_blank">View</a>
+          </article>
+
+          <article class="card">
+            <img class="thumb" src="assets/img/achievements/ach-poster-winner.jpg" alt="Poster design award">
+            <h3>Poster Design — Winner</h3>
+            <p class="muted">College design contest, 1st place.</p>
+            <a class="btn small secondary" href="assets/img/achievements/ach-poster-winner.jpg" target="_blank">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About</h2>
+        <p class="sub">History & Hindi at DU • WDC • Ambedkar Study Circle • Chayankan</p>
+        <p>
+          I’m a student who likes clean design, readable code, and honest photos.  
+          When not editing, I’m learning, playing chess, and building small tools.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="sub">Want to collaborate or just say hi?</p>
+        <form id="contactForm" action="https://formspree.io/f/your-id" method="POST" class="panel">
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label class="sr-only" for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Message…" required></textarea>
+
+          <button class="btn" type="submit">Send</button>
+          <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Newton. Built simple, on purpose.</p>
+      <a class="btn small secondary" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <dialog id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <img id="lightboxImg" alt="">
+    <p id="lightboxCaption" class="muted"></p>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
